@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(200, 200, 200);
   text-align: center;
   overflow: hidden;
 }
@@ -56,6 +56,7 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 .connect-wallet-button {
@@ -64,6 +65,29 @@
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   max-width: 300px;
+  margin-right: 20px;
+}
+
+.wallet-adapter-dropdown-list {
+  margin-right: 50px;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wallet-adapter-dropdown-list-active {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-right: 16px;
+  padding-left: 10px;
+}
+
+.wallet-adapter-dropdown-list-item {
+  margin-right: 30px;
+  margin-left: 3px;
+  padding-right: 0px;
+  padding-left: 0px;
+
 }
 
 .mint-button {
@@ -81,29 +105,6 @@ button:disabled {
 
 .item-image{
   height: 100px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0 px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 20px;
-}
-
-.twitter-logo {
-  width: 35px;
-  height: 35px;
-}
-
-.footer-text {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
 }
 
 .connected-container input[type='text'] {
@@ -133,40 +134,49 @@ button:disabled {
   cursor: pointer;
 }
 
-.download-button {
-  border: none;
-  background-color: #4664ff;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 3px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.create-product-button{
-  margin: 10px;
-  border: 0;
-  font-size: 20px;
-  font-weight: bold;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  color:white;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  z-index: 1;
-}
-
-.products-container{
+.middle-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px, 8%;
+}
+
+nav .logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 190px;
+  margin-right: 15px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 22px;
+}
+
+
+
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {
   0% {
